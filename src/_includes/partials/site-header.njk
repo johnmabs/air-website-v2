@@ -2,11 +2,13 @@
   <div class="wrapper">
     <div class="site-header__inner">
 
-      <a href={{ site.baseUrl }}>{{ site.title }}</a>
+      <a href={{ site.baseUrl }}>
+        <img class="site-header__logo" src="/assets/img/air-logo.png" alt="Logo {{ site.title }}">
+      </a>
 
       <nav class="nav" role="navigation" aria-label="Bare de navigation principale">
         <ul role="list">
-          {% for item in navigation %}
+          {% for item in navigation.default %}
             <li>
               <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>
                 {{ item.label }}
@@ -14,6 +16,7 @@
             </li>
           {% endfor %}
         </ul>
+        <a href={{ navigation.button.url }} data-type={{ navigation.button.theme }} class="btn">{{ navigation.button.label }}</a>
       </nav>
     </div>
   </div>

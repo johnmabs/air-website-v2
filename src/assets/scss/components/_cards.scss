@@ -11,7 +11,22 @@
   box-shadow: $card-shadow;
   border-radius: $card-border-radius;
 
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: $card-border-radius;
+    object-fit: cover;
+  }
+
   &__heading {
-    @include heading($card-heading-font-size, $card-heading-color-default);
+    // @include heading($card-heading-font-size, $card-heading-color-default);
+
+    font-size: $card-heading-font-size;
+    color: $card-heading-color-default;
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
   }
 }

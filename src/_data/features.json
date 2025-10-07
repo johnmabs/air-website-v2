@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "image": {
+        "src": "/assets/img/features/feature-1.png",
+        "alt": "Trois personnes en discussion détendue dans un espace moderne : une personne assise sur une chaise, une autre assise par terre, et une troisième assise sur un fauteuil avec un ordinateur portable ouvert devant eux, dans une ambiance chaleureuse et conviviale."
+      },
+      "title": "Étapes de notre processus d'accompagnement",
+      "description": "Chaque victime est accueillie dans un cadre bienveillant. Nous prenons le temps d'écouter son histoire et de comprendre ses besoins."
+    },
+    {
+      "image": {
+        "src": "/assets/img/features/feature-2.png",
+        "alt": "Deux personnes souriantes, assises sur un canapé, engagées dans une conversation amicale et détendue, dans un cadre chaleureux."
+      },
+      "title": "Évaluation des besoins individuels des victimes",
+      "description": "Nous identifions les besoins spécifiques de chaque personne. Certains peuvent nécessiter un soutien psychologique, d'autres une aide juridique ou médicale."
+    },
+    {
+      "image": {
+        "src": "/assets/img/features/feature-3.png",
+        "alt": "Deux personnes assises sur un canapé, riant ensemble tout en regardant un ordinateur portable, dans une ambiance chaleureuse et détendue à la maison."
+      },
+      "title": "Mise en place d'un plan d'action personnalisé",
+      "description": "Un plan d'action est élaboré pour chaque victime. Cela peut inclure des rendez-vous avec des professionnels, des démarches administratives ou des interventions d'urgence."
+    },
+    {
+      "image": {
+        "src": "/assets/img/features/feature-4.png",
+        "alt": "Un groupe de personnes concentrées autour d'une table, remplissant des documents avec attention, dans un cadre collaboratif et studieux."
+      },
+      "title": "Ateliers de sensibilisation et de prévention",
+      "description": "Nous organisons des ateliers pour sensibiliser la communauté. La prévention est essentielle pour réduire les risques de violence."
+    },
+    {
+      "image": {
+        "src": "/assets/img/features/feature-5.png",
+        "alt": "Deux personnes collaborant devant un ordinateur portable, l'une assise et l'autre debout derrière elle, dans un espace lumineux et chaleureux près d'une fenêtre."
+      },
+      "title": "Soutien dans l'accompagnement",
+      "description": "Des professionnels sont là pour écouter et guider. Ils offrent un soutien émotionnel et pratique tout au long du processus."
+    },
+    {
+      "image": {
+        "src": "/assets/img/features/feature-1.png",
+        "alt": "Trois personnes en discussion détendue dans un espace moderne : une personne assise sur une chaise, une autre assise par terre, et une troisième assise sur un fauteuil avec un ordinateur portable ouvert devant eux, dans une ambiance chaleureuse et conviviale."
+      },
+      "title": "Groupes de parole et d'écoute",
+      "description": "Participez à nos groupes pour partager vos expériences. Vous n'êtes pas seul(e) et ensemble, nous sommes plus forts."
+    }
+  ]
+}

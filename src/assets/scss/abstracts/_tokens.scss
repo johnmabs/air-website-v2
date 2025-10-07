@@ -73,7 +73,7 @@ $container-max-width-wide: 75rem;
 // site header
 $site-header-background-color: $color-background-default;
 $site-header-color: $color-text-default;
-$site-header-padding: $size-8 0;
+$site-header-padding: $size-1 0;
 $site-header-margin: 0;
 $site-header-jusitifcation-small-screens: space-between;
 $site-header-jusitifcation-large-screens: space-between;
@@ -92,9 +92,9 @@ $skip-nav-position: center;
 $navigation-color: $color-text-interactive-default;
 $navigation-color-hover: $color-text-interactive-hover;
 $navigation-font-size: $font-size-400;
-$navigation-gap: $size-9;
+$navigation-gap: $size-4;
 $navigation-link-text-decoration: none;
-$navigation-font-family: $body-font-family;
+$navigation-font-family: $font-family-accent;
 $navigation-font-weight: $body-font-weight;
 
 // site footer
@@ -128,16 +128,16 @@ $button-accent-background-hover: $color-neutral-300;
 
 // cards
 $card-flow-spacing: $size-2;
-$card-padding: $size-8;
+$card-padding: $size-1;
 $card-shadow: none;
-$card-border-radius: $border-radius-2;
+$card-border-radius: $border-radius-1;
 $card-background-default: transparent;
 
 $card-color-default: $body-text-color;
-$card-font-family: $body-font-family;
+$card-font-family: $font-family-accent;
 $card-line-height: 1.25;
 $card-heading-color-default: $heading-color-default;
-$card-heading-font-size: $font-size-600;
+$card-heading-font-size: $font-size-700;
 
 // forms
 // $form-label-color: $body-text-color;

@@ -1,6 +1,11 @@
 @use "../abstracts" as *;
+@use "sass:map";
 
 .nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $size-6;
+
   ul {
     --flex-column-gap: #{$navigation-gap};
 
@@ -19,5 +24,9 @@
         color: $navigation-color-hover;
       }
     }
+  }
+
+  @media (max-width: map.get($breakpoints, medium)) {
+    display: none;
   }
 }

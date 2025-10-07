@@ -15,4 +15,9 @@
       justify-content: $site-header-jusitifcation-large-screens;
     }
   }
+
+  &__logo {
+    width: 90px;
+    height: auto;
+  }
 }

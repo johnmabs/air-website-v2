@@ -1,7 +1,7 @@
 export default {
-  title: "Site web template",
+  title: "AIR, Association Internationale Renaissance, Association Renaissance",
   description:
-    "A simple starter template for Eleventy static sites, with blog and work portfolio.",
+    "AIR (Association Internationale Renaissance) est une association engagée dans la santé mentale et la lutte contre les violences psychologiques. Elle se consacre à soutenir les victimes en leur offrant des ressources et un accompagnement personnalisé pour favoriser leur rétablissement et leur bien-être.",
   url: "",
   baseUrl: "/",
   author: "John Mabiala",

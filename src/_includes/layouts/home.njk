@@ -10,16 +10,41 @@
 
   <section class="section">
     <div class="wrapper">
-      {{ card( 
-        cardImage = { 
-          src: "/images/my-card.jpg",
-          alt: "A description of the card image" 
-        }, 
-        title = "Card Title",
-        description = "This is a description of the card. It can be a few sentences long to give more detail about the content of the card.",
-        headingElement = "h4",
-        element = "article") 
-      }}
+
+      <div class="grid-auto-fit">
+
+        {% for item in features.items | limit(3) %}
+
+          <article class="card">
+            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}">
+            <h4 class="card__heading">{{ item.title }}</h4>
+            <p class="card__description">{{ item.description }}</p>
+          </article>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrapper">
+
+      <div class="grid-auto-fit">
+
+        {% for item in features.items | limit(3, 3) %}
+
+          <article class="card">
+            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}">
+            <h4 class="card__heading">{{ item.title }}</h4>
+            <p class="card__description">{{ item.description }}</p>
+          </article>
+
+        {% endfor %}
+
+      </div>
+
     </div>
   </section>
 

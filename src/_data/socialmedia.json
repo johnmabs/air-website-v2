@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/profile.php?id=61556122674360&sk=about",
+      "icon": "social-icon-facebook.svg"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/cendra_yo/",
+      "icon": "social-icon-instagram.svg"
+    },
+    {
+      "name": "Linkedin",
+      "url": "https://www.linkedin.com/in/cendra-yoka-6bb46611a/",
+      "icon": "social-icon-linkedin.svg"
+    }
+  ]
+}

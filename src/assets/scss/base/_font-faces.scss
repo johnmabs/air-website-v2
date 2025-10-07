@@ -1,28 +1,45 @@
 @font-face {
-  font-family: "Alegreya SC";
+  font-family: "Inter Tight";
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/alegreyasc-bold-webfont.woff2") format("woff2"),
-    url("/fonts/alegreyasc-bold-webfont.woff") format("woff");
+  src: url("../fonts/Inter_Tight-normal-700-latin.woff2") format("woff2"),
+    url("../fonts/Inter_Tight-normal-700-latin.woff") format("woff");
 }
+
 @font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/sourcesanspro-regular-webfont.woff2") format("woff2"),
-    url("/fonts/sourcesanspro-regular-webfont.woff") format("woff");
-}
-@font-face {
-  font-family: "Source Sans Pro";
+  font-family: "Inter Tight";
   font-weight: 500;
   font-display: swap;
-  src: url("/fonts/sourcesanspro-semibold-webfont.woff2") format("woff2"),
-    url("/fonts/sourcesanspro-semibold-webfont.woff") format("woff");
+  src: url("../fonts/Inter_Tight-normal-500-latin.woff2") format("woff2"),
+    url("../fonts/Inter_Tight-normal-500-latin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter Tight";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Inter_Tight-normal-400-latin.woff2") format("woff2"),
+    url("../fonts/Inter_Tight-normal-400-latin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Poppins-normal-400-latin.woff2") format("woff2"),
+    url("../fonts/Poppins-normal-400-latin.woff") format("woff");
 }
 @font-face {
-  font-family: "Source Sans Pro";
+  font-family: "Poppins";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Poppins-normal-400-latin.woff2") format("woff2"),
+    url("../fonts/Poppins-normal-500-latin.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
   font-weight: 700;
   font-display: swap;
-  src: url("/fonts/sourcesanspro-bold-webfont.woff2") format("woff2"),
-    url("/fonts/sourcesanspro-bold-webfont.woff") format("woff");
+  src: url("../fonts/Poppins-normal-400-latin.woff2") format("woff2"),
+    url("../fonts/Poppins-normal-700-latin.woff") format("woff");
 }
