@@ -1,0 +1,53 @@
+{% set pageTitle = title + ' - ' + site.title %}
+
+{# We don't want any duplication. This is likely for the home page. #}
+{% if site.title === title %}
+  {% set pageTitle = title %}
+{% endif %}
+
+{% set siteTitle = site.title %}
+{% set currentUrl = site.url + page.url %}
+
+{# If the page’s Front Matter has specific metaTitle and/or metaDesc items, switch 
+  them into the mix. #}
+{% if metaTitle %}
+  {% set pageTitle = metaTitle %}
+{% endif %}
+
+{% if not summary %}
+  {% set summary = site.description %}
+{% endif %}
+
+{% if not metaDesc %}
+  {% set metaDesc = summary %}
+{% endif %}
+
+<title>{{ pageTitle }}</title>
+<link rel="canonical" href="{{ currentUrl }}"/>
+
+<meta property="og:site_name" content="{{ siteTitle }}"/>
+<meta property="og:title" content="{{ pageTitle }}"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="{{ currentUrl }}"/>
+
+{% if site.authorHandle %}
+  <meta name="twitter:site" content="@{{ site.authorHandle }}"/>
+{% endif %}
+
+{% if site.author %}
+  <meta name="author" content="{{ site.author }}"/>
+{% endif %}
+
+{% if metaDesc %}
+  <meta name="description" content="{{ metaDesc }}"/>
+  <meta name="twitter:description" content="{{ metaDesc }}"/>
+  <meta property="og:description" content="{{ metaDesc }}"/>
+{% endif %}
+
+{% if socialImage %}
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta property="og:image" content="{{ socialImage }}"/>
+  <meta name="twitter:image" content="{{ socialImage }}"/>
+  <meta property="og:image:alt" content="Page image for {{ site.name }}"/>
+  <meta name="twitter:image:alt" content="Page image for {{ site.name }}"/>
+{% endif %}

@@ -1,0 +1,41 @@
+{
+  "name": "site-web-template",
+  "version": "1.0.0",
+  "description": "",
+  "author": "John Mabiala",
+  "keywords": [],
+  "license": "ISC",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "server": "npx @11ty/eleventy --serve --quiet",
+    "clean": "rimraf ./dist",
+    "styles:dev": "sass --embed-source-map --source-map-urls=\"absolute\" \"./src/assets/scss/main.scss\" \"./dist/assets/css/styles.css\"",
+    "styles:prod": "sass --no-source-map \"./src/assets/scss/main.scss\" \"./dist/assets/css/styles.css\" --style=compressed",
+    "scripts:dev": "esbuild \"./src/assets/js/main.js\" --target=es6 --bundle --outfile=\"./dist/assets/js/main.bundle.js\"",
+    "scripts:prod": "esbuild \"./src/assets/js/main.js\" --target=\"es2020\" --bundle --minify --outfile=\"./dist/assets/js/main.bundle.js\"",
+    "eleventy": "npx @11ty/eleventy --quiet",
+    "images": "node \"./build_tasks/generate-images.js\"",
+    "watch:scripts": "onchange \"./src/assets/js/**/*\" -- npm run scripts:dev",
+    "watch:styles": "onchange \"./src/assets/scss/**/*\" -- npm run styles:dev",
+    "build": "npm-run-all clean --parallel images styles:prod scripts:prod eleventy",
+    "dev": "npm-run-all --parallel server watch:*",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@eslint/js": "^9.37.0",
+    "esbuild": "^0.25.10",
+    "eslint": "^9.37.0",
+    "glob": "^11.0.3",
+    "globals": "^16.4.0",
+    "luxon": "^3.7.2",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.93.2",
+    "sharp": "^0.34.4"
+  }
+}

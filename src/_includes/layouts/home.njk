@@ -1,0 +1,26 @@
+{% extends "layouts/base.njk" %}
+{% from 'macros/card.njk' import card %}
+
+{% block content %}
+  <section class="hero padding-block-11">
+    <div class="wrapper">
+      <h1 class="heading-1 clr-neutral-100">{{ title }}</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrapper">
+      {{ card( 
+        cardImage = { 
+          src: "/images/my-card.jpg",
+          alt: "A description of the card image" 
+        }, 
+        title = "Card Title",
+        description = "This is a description of the card. It can be a few sentences long to give more detail about the content of the card.",
+        headingElement = "h4",
+        element = "article") 
+      }}
+    </div>
+  </section>
+
+{% endblock %}

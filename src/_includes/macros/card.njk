@@ -1,0 +1,7 @@
+{% macro card(cardImage, title, description, headingElement = "h2", element = "div") %}
+  <{{ element }} class="card">
+    <img src="{{ cardImage.src }}" alt="{{ cardImage.alt }}">
+    <headingElement class="card__heading">{{ title }}</headingElement>
+    <p class="card__description">{{ description }}</p>
+  </>
+{% endmacro %}
