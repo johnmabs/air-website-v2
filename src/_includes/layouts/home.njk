@@ -2,17 +2,41 @@
 {% from 'macros/card.njk' import card %}
 
 {% block content %}
-  <section class="hero padding-block-11">
+  <section class="hero">
+
     <div class="wrapper">
-      <h1 class="heading-1 clr-neutral-100">{{ title }}</h1>
+      <div class="hero__content">
+        <h1>{{ hero.title }}</h1>
+        <p>{{ hero.summary }}</p>
+
+        <div class="flex-group margin-inline-auto margin-block-start-8">
+          <a class="button" 
+            data-type={{ hero.buttons.button_1.theme }} 
+            href="{{ hero.buttons.button_1.href }}">
+            {{ hero.buttons.button_1.text | safe }}
+          </a>
+          <a class="button" 
+            data-type={{ hero.buttons.button_2.theme }} 
+            href="{{ hero.buttons.button_2.href }}">
+            {{ hero.buttons.button_2.text | safe }}
+          </a>
+        </div>
+      </div>
     </div>
+
   </section>
 
   <section class="section">
     <div class="wrapper">
 
-      <div class="grid-auto-fit">
+      <div class="section__header">
+        <h2>{{ features1.heading }}</h2>
+        <p>
+          {{ features1.summary }}
+        </p>
+      </div>
 
+      <div class="grid-auto-fit">
         {% for item in features.items | limit(3) %}
 
           <article class="card">
@@ -22,21 +46,27 @@
           </article>
 
         {% endfor %}
-
       </div>
 
     </div>
   </section>
 
-  <section class="section">
+  <section class="section bg-primary-700">
     <div class="wrapper">
+
+      <div class="section__header">
+        <h2>{{ features2.heading }}</h2>
+        <p>
+          {{ features2.summary }}
+        </p>
+      </div>
 
       <div class="grid-auto-fit">
 
         {% for item in features.items | limit(3, 3) %}
 
           <article class="card">
-            <img src="{{ item.image.src }}" alt="{{ item.image.alt }}">
+            <img class="card__image" src="{{ item.image.src }}" alt="{{ item.image.alt }}">
             <h4 class="card__heading">{{ item.title }}</h4>
             <p class="card__description">{{ item.description }}</p>
           </article>

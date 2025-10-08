@@ -46,7 +46,7 @@ export default function (eleventyConfig) {
   // server config
   eleventyConfig.setServerOptions({
     watch: ["./dist/assets/css/**/*.css", "./dist/assets/js/**/*.js"],
-    port: 3000,
+    port: 8000,
   });
 }
 

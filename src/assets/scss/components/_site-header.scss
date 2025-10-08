@@ -11,13 +11,22 @@
     align-items: $site-header-alignment;
     justify-content: $site-header-jusitifcation-small-screens;
 
+    ul {
+      align-items: $site-header-alignment;
+    }
+
     @include mq(medium) {
       justify-content: $site-header-jusitifcation-large-screens;
     }
   }
 
   &__logo {
-    width: 90px;
+    width: 60px;
     height: auto;
+
+    @include mq(medium) {
+      width: 90px;
+      height: auto;
+    }
   }
 }

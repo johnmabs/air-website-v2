@@ -2,7 +2,7 @@
   "items": [
     {
       "image": {
-        "src": "/assets/img/features/feature-1.png",
+        "src": "/assets/img/features/feature-1.jpg",
         "alt": "Trois personnes en discussion détendue dans un espace moderne : une personne assise sur une chaise, une autre assise par terre, et une troisième assise sur un fauteuil avec un ordinateur portable ouvert devant eux, dans une ambiance chaleureuse et conviviale."
       },
       "title": "Étapes de notre processus d'accompagnement",
@@ -10,7 +10,7 @@
     },
     {
       "image": {
-        "src": "/assets/img/features/feature-2.png",
+        "src": "/assets/img/features/feature-2.jpg",
         "alt": "Deux personnes souriantes, assises sur un canapé, engagées dans une conversation amicale et détendue, dans un cadre chaleureux."
       },
       "title": "Évaluation des besoins individuels des victimes",
@@ -18,7 +18,7 @@
     },
     {
       "image": {
-        "src": "/assets/img/features/feature-3.png",
+        "src": "/assets/img/features/feature-3.jpg",
         "alt": "Deux personnes assises sur un canapé, riant ensemble tout en regardant un ordinateur portable, dans une ambiance chaleureuse et détendue à la maison."
       },
       "title": "Mise en place d'un plan d'action personnalisé",
@@ -26,7 +26,7 @@
     },
     {
       "image": {
-        "src": "/assets/img/features/feature-4.png",
+        "src": "/assets/img/features/feature-4.jpg",
         "alt": "Un groupe de personnes concentrées autour d'une table, remplissant des documents avec attention, dans un cadre collaboratif et studieux."
       },
       "title": "Ateliers de sensibilisation et de prévention",
@@ -34,7 +34,7 @@
     },
     {
       "image": {
-        "src": "/assets/img/features/feature-5.png",
+        "src": "/assets/img/features/feature-5.jpg",
         "alt": "Deux personnes collaborant devant un ordinateur portable, l'une assise et l'autre debout derrière elle, dans un espace lumineux et chaleureux près d'une fenêtre."
       },
       "title": "Soutien dans l'accompagnement",
@@ -42,7 +42,7 @@
     },
     {
       "image": {
-        "src": "/assets/img/features/feature-1.png",
+        "src": "/assets/img/features/feature-1.jpg",
         "alt": "Trois personnes en discussion détendue dans un espace moderne : une personne assise sur une chaise, une autre assise par terre, et une troisième assise sur un fauteuil avec un ordinateur portable ouvert devant eux, dans une ambiance chaleureuse et conviviale."
       },
       "title": "Groupes de parole et d'écoute",

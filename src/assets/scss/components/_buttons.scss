@@ -1,8 +1,10 @@
 @use "../abstracts" as *;
+@use "sass:map";
 
 .button {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
   text-decoration: none;
   line-height: 1;
@@ -13,7 +15,9 @@
   padding: $button-padding;
   border: $button-border;
   border-radius: $button-border-radius;
-  transition: 275ms ease;
+  transition: box-shadow 275ms ease;
+
+  box-shadow: $box-shadow-6;
 
   &[data-type="primary"] {
     background-color: $button-primary-background;
@@ -22,6 +26,7 @@
     &:is(:hover, :focus) {
       background-color: $button-primary-background-hover;
       color: $button-primary-color-hover;
+      box-shadow: $box-shadow-7;
     }
   }
 
@@ -32,6 +37,7 @@
     &:is(:hover, :focus) {
       background-color: $button-accent-background-hover;
       color: $button-accent-color-hover;
+      box-shadow: $box-shadow-7;
     }
   }
 }

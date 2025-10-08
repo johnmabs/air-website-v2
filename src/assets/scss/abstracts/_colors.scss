@@ -11,6 +11,12 @@ $-clr-gray-800: hsl(0 0% 17.5%);
 $-clr-gray-900: hsl(0 0% 7.5%);
 $-clr-black: hsl(0 0% 0%);
 
+$-clr-brand-400: hsl(60 64% 61%);
+$-clr-brand-500: hsl(37 69% 62%);
+$-clr-brand-600: hsl(37 83% 18%);
+$-clr-brand-700: hsl(37 83% 14%);
+$-clr-brand-800: hsl(60 82% 13%);
+
 $default: (
   "neutral": (
     "000": $-clr-white,
@@ -18,6 +24,7 @@ $default: (
     "200": $-clr-gray-200,
     "300": $-clr-gray-300,
     "400": $-clr-gray-400,
+    "450": #cbc8c8,
     "500": $-clr-gray-500,
     "600": $-clr-gray-600,
     "700": $-clr-gray-700,
@@ -25,8 +32,15 @@ $default: (
     "900": $-clr-gray-900,
     "1000": $-clr-black,
   ),
-  "primary": (),
-  "accent": (),
+  "accent": (
+    "400": $-clr-brand-400,
+    "500": $-clr-brand-500,
+    "600": $-clr-brand-600,
+  ),
+  "primary": (
+    "700": $-clr-brand-700,
+    "800": $-clr-brand-800,
+  ),
 );
 
 $dark: (
@@ -53,6 +67,7 @@ $color-neutral-100: var(--neutral-100);
 $color-neutral-200: var(--neutral-200);
 $color-neutral-300: var(--neutral-300);
 $color-neutral-400: var(--neutral-400);
+$color-neutral-450: var(--neutral-450);
 $color-neutral-500: var(--neutral-500);
 $color-neutral-600: var(--neutral-600);
 $color-neutral-700: var(--neutral-700);
@@ -60,22 +75,9 @@ $color-neutral-800: var(--neutral-800);
 $color-neutral-900: var(--neutral-900);
 $color-neutral-1000: var(--neutral-1000);
 
-// $color-primary-100: var(--primary-100);
-// $color-primary-200: var(--primary-200);
-// $color-primary-300: var(--primary-300);
-// $color-primary-400: var(--primary-400);
-// $color-primary-500: var(--primary-500);
-// $color-primary-600: var(--primary-600);
-// $color-primary-700: var(--primary-700);
-// $color-primary-800: var(--primary-800);
-// $color-primary-900: var(--primary-900);
+$color-primary-700: var(--primary-700);
+$color-primary-800: var(--primary-800);
 
-// $color-accent-100: var(--accent-100);
-// $color-accent-200: var(--accent-200);
-// $color-accent-300: var(--accent-300);
-// $color-accent-400: var(--accent-400);
-// $color-accent-500: var(--accent-500);
-// $color-accent-600: var(--accent-600);
-// $color-accent-700: var(--accent-700);
-// $color-accent-800: var(--accent-800);
-// $color-accent-900: var(--accent-900);
+$color-accent-400: var(--accent-400);
+$color-accent-500: var(--accent-500);
+$color-accent-600: var(--accent-600);

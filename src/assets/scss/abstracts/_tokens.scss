@@ -6,16 +6,17 @@ $active-theme: $default;
 $enable-media-query-dark-mode: false;
 
 // Contextual
-$color-text-default: $color-neutral-800;
-$color-background-default: $color-neutral-100;
-$color-text-interactive-default: $color-neutral-900;
-$color-text-interactive-hover: $color-neutral-600;
+$color-text-default: $color-neutral-000;
+$color-background-default: $color-primary-800;
+$color-text-interactive-default: $color-neutral-000;
+$color-text-interactive-hover: $color-neutral-000;
 
 // set to 0 to disable
 $letter-spacing-loose: 0;
 
-$border-radius-1: $size-2;
-$border-radius-2: $size-4;
+$border-radius-1: $size-3;
+$border-radius-2: $size-8;
+$border-radius-3: $size-9;
 
 $box-shadow-1: 0px 6px 5px rgb(0, 0, 0, 0.012),
   0px 22px 18px rgb(0, 0, 0, 0.018), 0px 100px 80px rgb(0, 0, 0, 0.03);
@@ -32,6 +33,9 @@ $box-shadow-4: 0px 6px 5px rgb(0, 0, 0, 0.03), 0px 22px 18px rgb(0, 0, 0, 0.042)
 $box-shadow-5: 0px 6px 5px rgb(0, 0, 0, 0.04), 0px 22px 18px rgb(0, 0, 0, 0.06),
   0px 100px 80px rgb(0, 0, 0, 0.1);
 
+$box-shadow-6: 0px -5px 0px 0px rgba(0, 0, 0, 0.2) inset;
+$box-shadow-7: 0px -3px 0px 0px rgba(0, 0, 0, 0.2) inset;
+
 // body
 $body-font-family: $font-family-base;
 $body-font-size: $font-size-400;
@@ -45,8 +49,8 @@ $link-color-hover: $color-text-interactive-hover;
 
 // headings
 $heading-font-family: $font-family-accent;
-$heading-color-default: $color-neutral-700;
-$heading-font-weight: $font-weight-bold;
+$heading-color-default: $color-neutral-000;
+$heading-font-weight: $font-weight-default;
 $heading-letter-spacing: $letter-spacing-loose;
 $heading-line-height: 1.1;
 $heading-text-transform: none;
@@ -57,16 +61,20 @@ $heading-2-font-size: $font-size-800;
 $heading-2-color: $heading-color-default;
 $heading-3-font-size: $font-size-700;
 $heading-3-color: $heading-color-default;
+$heading-4-font-size: $font-size-600;
+$heading-4-color: $heading-color-default;
+$heading-5-font-size: $font-size-500;
+$heading-5-color: $heading-color-default;
 
 // layout
-$grid-gap: $size-6;
+$grid-gap: $size-4;
 $flex-group-gap: $size-4;
 
-$hero-padding-block: clamp(15rem, 15vh, 20rem);
+$hero-padding-block: clamp(8.3rem, 15vh, 13rem);
 $section-padding-block: clamp(5rem, 10vh, 6rem);
 
-$container-min-margin-inline: $size-4;
-$container-max-width: 64rem;
+$container-min-margin-inline: $size-8;
+$container-max-width: 1440px;
 $container-max-width-narrow: 40rem;
 $container-max-width-wide: 75rem;
 
@@ -106,25 +114,25 @@ $footer-link-font-family: $font-family-accent;
 $footer-link-text-decoration: none;
 
 // buttons
-$button-font-family: $body-font-family;
+$button-font-family: $font-family-accent;
 $button-font-size: $font-size-400;
-$button-font-weight: $font-weight-bold;
-$button-text-transform: uppercase;
-$button-padding: 0.75em 2em;
-$button-border: 0;
+$button-font-weight: $font-weight-default;
+$button-text-transform: none;
+$button-padding: 0.625em 1.5em;
+$button-border: 1px solid $color-neutral-1000;
 $button-border-radius: $border-radius-1;
 
 // buttons - primary
-$button-primary-color: $color-neutral-100;
-$button-primary-background: $color-neutral-700;
-$button-primary-color-hover: $color-neutral-100;
-$button-primary-background-hover: $color-neutral-800;
+$button-primary-color: $color-neutral-1000;
+$button-primary-background: #f4f4d0;
+$button-primary-color-hover: $color-neutral-1000;
+$button-primary-background-hover: #f4f4d0;
 
 // buttons - accent
-$button-accent-color: $color-neutral-900;
-$button-accent-background: $color-neutral-400;
-$button-accent-color-hover: $color-neutral-800;
-$button-accent-background-hover: $color-neutral-300;
+$button-accent-color: $color-neutral-1000;
+$button-accent-background: $color-neutral-000;
+$button-accent-color-hover: $color-neutral-1000;
+$button-accent-background-hover: $color-neutral-000;
 
 // cards
 $card-flow-spacing: $size-2;
@@ -137,7 +145,7 @@ $card-color-default: $body-text-color;
 $card-font-family: $font-family-accent;
 $card-line-height: 1.25;
 $card-heading-color-default: $heading-color-default;
-$card-heading-font-size: $font-size-700;
+$card-heading-font-size: $font-size-600;
 
 // forms
 // $form-label-color: $body-text-color;

@@ -18,7 +18,7 @@
   }
 
   @each $screen-size, $size-map in $font-sizes {
-    @if $screen-size == x-small {
+    @if $screen-size == small {
       @each $size-name, $size-value in $size-map {
         --fs-#{$size-name}: #{$size-value};
       }
