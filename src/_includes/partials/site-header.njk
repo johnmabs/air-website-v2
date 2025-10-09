@@ -6,7 +6,16 @@
         <img class="site-header__logo" src="/assets/img/air-logo.png" alt="Logo {{ site.title }}">
       </a>
 
-      <nav class="nav" role="navigation" aria-label="Bare de navigation principale">
+      <span id="nav-label" class="visually-hidden" hidden>Bare de navigation principale</span>
+      <button id="btnOpen" aria-controls="primary-nav" aria-expanded="false" aria-labelledBy="nav-label">
+        {% include "svg/icon-hamburger.svg" %}
+      </button>
+
+      <nav class="primary-navigation" role="dialog" aria-labelledBy="nav-label" >
+        <button id="btnClose" class="close-menu-btn" aria-controls="primary-nav" aria-label="Fermer">
+          <span class="visually-hidden">Menu</span>
+          {% include "svg/icon-close.svg" %}
+        </button>
         <ul role="list">
           {% for item in navigation.default %}
             <li>

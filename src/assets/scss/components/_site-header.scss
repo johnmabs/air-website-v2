@@ -1,11 +1,15 @@
 @use "../abstracts" as *;
+@use "sass:map";
 
 .site-header {
+  --flex-column-gap: #{$navigation-gap};
+
   color: $site-header-color;
   background-color: $site-header-background-color;
   padding: $site-header-padding;
 
   &__inner {
+    position: relative;
     display: flex;
     gap: $size-4;
     align-items: $site-header-alignment;
@@ -27,6 +31,122 @@
     @include mq(medium) {
       width: 90px;
       height: auto;
+    }
+  }
+
+  [aria-controls="primary-nav"] {
+    display: none;
+    background: transparent;
+    border: none;
+    color: $color-neutral-000;
+    cursor: pointer;
+
+    svg {
+      color: currentColor;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  .primary-navigation {
+    display: flex;
+    gap: calc(var(--flex-column-gap) / 2) var(--flex-column-gap);
+    padding-block: 1.5rem;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: calc(var(--flex-column-gap) / 2) var(--flex-column-gap);
+
+      font-family: $navigation-font-family;
+      font-weight: $navigation-font-weight;
+    }
+
+    a {
+      text-decoration: none;
+
+      color: $navigation-color;
+      text-decoration: $navigation-link-text-decoration;
+      transition: color 0.3s ease-in-out;
+
+      &:is(:hover, :focus) {
+        color: $navigation-color-hover;
+      }
+    }
+
+    .close-menu-btn {
+      display: none;
+    }
+
+    .button {
+      color: $button-primary-color;
+      font-size: $font-size-400;
+      transition: box-shadow 0.3s ease-in-out;
+
+      &:is(:hover, :focus) {
+        color: $button-primary-color-hover;
+      }
+    }
+
+    @media (max-width: map.get($breakpoints, medium)) {
+      z-index: 100;
+      background-color: $color-accent-600;
+      position: fixed;
+      inset: 0;
+      flex-direction: column;
+      translate: 100vw 0;
+      transition: translate 0.5s ease-in-out;
+
+      .close-menu-btn {
+        display: block;
+        margin-inline-start: auto;
+        margin-inline-end: 2rem;
+        margin-block-end: 8rem;
+      }
+
+      ul {
+        gap: 0;
+        flex-direction: column;
+      }
+
+      li + li {
+        margin-block-start: 1.5rem;
+        padding-block-start: 1.5rem;
+        border-top: 2px solid white;
+      }
+
+      a {
+        font-size: $font-size-500;
+      }
+
+      .button {
+        width: fit-content;
+        align-self: center;
+        margin-block-start: 1.5rem;
+        color: $button-primary-color;
+        font-size: $font-size-400;
+        transition: box-shadow 0.3s ease-in-out;
+      }
+    }
+
+    @media (max-width: map.get($breakpoints, medium)) and (prefers-reduced-motion) {
+      translate: 0;
+      opacity: 0;
+      transition: opacity 500ms ease-in-out;
+    }
+  }
+
+  @media (max-width: map.get($breakpoints, medium)) {
+    [aria-controls="primary-nav"] {
+      display: block;
+    }
+
+    [aria-expanded="true"] + .primary-navigation {
+      translate: 0;
+    }
+
+    @media (prefers-reduced-motion) {
+      opacity: 1;
     }
   }
 }
