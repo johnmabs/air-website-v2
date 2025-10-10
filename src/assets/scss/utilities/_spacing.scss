@@ -8,6 +8,14 @@
   margin-inline: auto;
 }
 
+.justify-center {
+  justify-items: center;
+
+  @include mq(medium) {
+    justify-items: left;
+  }
+}
+
 @each $size-name, $size-value in $sizes {
   .margin {
     &-#{$size-name} {

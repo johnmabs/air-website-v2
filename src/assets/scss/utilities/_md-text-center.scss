@@ -1,0 +1,8 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+.md-text-center {
+  @media (max-width: map.get($breakpoints, medium)) {
+    text-align: center;
+  }
+}

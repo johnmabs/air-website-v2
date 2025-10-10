@@ -1,9 +1,7 @@
 {% extends "layouts/base.njk" %}
-{% from 'macros/card.njk' import card %}
 
 {% block content %}
   <section class="hero">
-
     <div class="wrapper">
       <div class="hero__content">
         <h1>{{ hero.title }}</h1>
@@ -23,9 +21,9 @@
         </div>
       </div>
     </div>
-
   </section>
 
+  {# Features section 1 #}
   <section class="section">
     <div class="wrapper">
 
@@ -50,7 +48,9 @@
 
     </div>
   </section>
+  {# End features section 1 #}
 
+  {# Features section 2 #}
   <section class="section bg-primary-700">
     <div class="wrapper">
 
@@ -77,5 +77,77 @@
 
     </div>
   </section>
+  {# End features section 2 #}
+
+  <section class="section">
+    <div class="wrapper">
+      <div class="even-columns vertically-centered justify-center">
+        <div class="flow max-w-500 md-text-center">
+          <h3 class="heading-2">{{ engagement.title }}</h3>
+          <p>{{ engagement.content }}</p>
+        </div>
+        <div>
+          <img class="border-radius-3" src={{ engagement.image.src }} alt={{ engagement.image.alt }}>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Testimonials section #}
+  <section class="section bg-primary-700">
+    <div class="wrapper">
+      <div class="testimonial-slider">
+        <div class="slider-container">
+          {% for testimonial in testimonials.items %}
+            <div class="testimonial-slide">
+              <p class="quote">
+                {{ testimonial.quote }}
+              </p>
+              <div class="author">
+                <img src={{ testimonial.author.image.src }} alt={{ testimonial.author.image.alt }}/>
+                <div class="author-info">
+                  <h4>{{ testimonial.author.name }}</h4>
+                  <p>{{ testimonial.author.title }}</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <button class="prev-btn" aria-label="Previous Testimonial">
+        &#10094;
+        </button>
+        <button class="next-btn" aria-label="Next Testimonial">&#10095;</button>
+        <div class="dots">
+          {% for testimonial in testimonials.items %}
+            <span class="dot"></span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+  {# End testimonials section #}
+
+  {# Support us section #}
+  <section class="section">
+    <div class="wrapper">
+      <div class="even-columns">
+        <div>
+          <h2 class="heading-2">{{ support_us.title }}</h2>
+        </div>
+        <div class="flow">
+          <p>{{ support_us.content }}</p>
+          <a class="button" href={{ support_us.button.href }}  data-type={{ support_us.button.theme }}>{{ support_us.button.text | safe }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {# End support us section #}
+
+  {# Contac us section #}
+  <section class="section bg-accent-400">
+    <div class="wrapper"></div>
+  </section>
+  {# End contac us section #}
 
 {% endblock %}

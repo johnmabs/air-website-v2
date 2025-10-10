@@ -67,10 +67,10 @@ $heading-5-font-size: $font-size-500;
 $heading-5-color: $heading-color-default;
 
 // layout
-$grid-gap: $size-4;
+$grid-gap: $size-9;
 $flex-group-gap: $size-4;
 
-$hero-padding-block: clamp(8.3rem, 15vh, 13rem);
+$hero-padding-block: clamp(9rem, 25vh, 14rem);
 $section-padding-block: clamp(5rem, 10vh, 6rem);
 
 $container-min-margin-inline: $size-8;
