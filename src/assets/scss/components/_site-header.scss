@@ -8,6 +8,10 @@
   background-color: $site-header-background-color;
   padding: $site-header-padding;
 
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
   &__inner {
     position: relative;
     display: flex;
@@ -25,13 +29,19 @@
   }
 
   &__logo {
-    width: 60px;
-    height: auto;
+    --small-size-logo: 65px;
+    --large-size-logo: 90px;
+
+    width: var(--small-size-logo);
+    height: var(--small-size-logo);
+    display: inline-block;
 
     @include mq(medium) {
-      width: 90px;
-      height: auto;
+      width: var(--large-size-logo);
+      height: var(--large-size-logo);
     }
+
+    transition: all 500ms;
   }
 
   [aria-controls="primary-nav"] {
@@ -51,7 +61,7 @@
   .primary-navigation {
     display: flex;
     gap: calc(var(--flex-column-gap) / 2) var(--flex-column-gap);
-    padding-block: 1.5rem;
+    // padding-block: 1.5rem;
 
     ul {
       display: flex;
@@ -147,6 +157,14 @@
 
     @media (prefers-reduced-motion) {
       opacity: 1;
+    }
+  }
+
+  &.sticking {
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.575);
+    .site-header__logo {
+      --small-size-logo: 35px;
+      --large-size-logo: 70px;
     }
   }
 }

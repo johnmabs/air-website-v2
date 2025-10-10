@@ -2,8 +2,9 @@
   <div class="wrapper">
     <div class="site-header__inner">
 
-      <a href={{ site.baseUrl }}>
-        <img class="site-header__logo" src="/assets/img/air-logo.png" alt="Logo {{ site.title }}">
+      <a class="site-header__logo" href={{ site.baseUrl }}>
+        <img src="/assets/img/air-logo.png" alt="Logo {{ site.title }}">
+        <p class="visually-hidden">{{ site.title }}}</p>
       </a>
 
       <span id="nav-label" class="visually-hidden" hidden>Bare de navigation principale</span>

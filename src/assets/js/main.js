@@ -1,9 +1,22 @@
+//
+const siteHeader = document.querySelector(".site-header");
+const scrollWatcher = document.createElement("div");
+
 const btnOpen = document.querySelector("#btnOpen");
 const btnClose = document.querySelector("#btnClose");
 const media = window.matchMedia("(width < 56.25em)");
 const primaryNavigation = document.querySelector(".primary-navigation");
 const main = document.querySelector("main");
 const body = document.querySelector("body");
+
+scrollWatcher.setAttribute("data-scroll-watcher", "");
+siteHeader?.before(scrollWatcher);
+
+const navObserver = new IntersectionObserver((entries) => {
+  siteHeader?.classList.toggle("sticking", !entries[0].isIntersecting);
+});
+
+navObserver.observe(scrollWatcher);
 
 function setupPrincipalNav(e) {
   if (e.matches) {
