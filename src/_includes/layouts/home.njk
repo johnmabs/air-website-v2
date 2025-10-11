@@ -104,7 +104,10 @@
                 {{ testimonial.quote }}
               </p>
               <div class="author">
-                <img src={{ testimonial.author.image.src }} alt={{ testimonial.author.image.alt }}/>
+                <div class="img-container">
+                  <img src={{ testimonial.author.image.src }} alt={{ testimonial.author.image.alt }}/>
+                </div>
+
                 <div class="author-info">
                   <h4>{{ testimonial.author.name }}</h4>
                   <p>{{ testimonial.author.title }}</p>

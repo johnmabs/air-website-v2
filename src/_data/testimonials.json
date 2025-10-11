@@ -1,36 +1,14 @@
 {
   "items": [
     {
-      "quote": "This is the best service I have ever used. The team was incredibly helpful and the results exceeded my expectations. Highly recommended!",
+      "quote": "Grâce à l'association, j'ai retrouvé ma voix et ma dignité. Leur soutien a été un véritable tournant dans ma vie.",
       "author": {
         "image": {
-          "src": "https://i.pravatar.cc/150?img=1",
-          "alt": "Author 1"
+          "src": "/assets/img/woman_640.webp",
+          "alt": "Amelie OBA"
         },
-        "name": "Jane Doe",
-        "title": "CEO, Tech Solutions"
-      }
-    },
-    {
-      "quote": "An amazing experience from start to finish. The process was seamless, and the final product was polished and professional. I couldn't be happier.",
-      "author": {
-        "image": {
-          "src": "https://i.pravatar.cc/150?img=2",
-          "alt": "Author 2"
-        },
-        "name": "John Smith",
-        "title": "Marketing Director, Innovate Co."
-      }
-    },
-    {
-      "quote": "Working with them was a game-changer for our project. Their attention to detail and creative approach made all the difference. Five stars!",
-      "author": {
-        "image": {
-          "src": "https://i.pravatar.cc/150?img=3",
-          "alt": "Author 3"
-        },
-        "name": "Emily White",
-        "title": "Project Manager, Creative Minds"
+        "name": "Amelie OBA",
+        "title": "Survivante, Indépendante"
       }
     }
   ]
