@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.home-contact {
+  .home-contact__svg {
+    color: $color-neutral-1000;
+    svg {
+      margin-inline: auto;
+      color: currentColor;
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  a {
+    transition: color 0.2s ease-in-out;
+  }
+
+  a:hover {
+    color: $color-primary-700;
+  }
+}

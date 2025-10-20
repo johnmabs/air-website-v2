@@ -1,0 +1,98 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="page-head page-head-about section">
+    <div class="wrapper" data-type="narrow">
+      <div class="page-head__inner flow">
+        <h1 class="heading-1 clr-neutral-100 text-center">{{ page_title }}</h1>
+        <p class="text-center">{{ page_summary }}</p>
+        <div class="button-container">
+          <a data-type="primary" href="{{buttonUrl}}" class="button">{{ buttonText | safe }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-primary-700">
+    <div class="wrapper flow" data-type="narrow">
+      <article class="flow">
+        <h2 class="heading-2 text-center">
+          Notre engagement pour la santé mentale et la lutte contre les
+          violences
+        </h2>
+        <p class="text-center">
+          Depuis sa création, AIR s’est donné pour mission de soutenir les
+          victimes de violences psychologiques. Nous nous engageons à offrir des
+          ressources et un accompagnement adapté pour favoriser leur
+          rétablissement et leur bien-être.
+        </p>
+      </article>
+
+      <article class="flow">
+        <h2 class="heading-2 text-center">Notre histoire</h2>
+        <p class="text-center">
+          Il était une fois la vision du super pouvoir de connexion à l’esprit
+          afin de forger des liens humains, d’autonomiser et d’élever. Puis nous
+          avons vu que certaines personnes se sentaient vraiment tristes ou
+          effrayées intérieurement, et nous avons voulu les aider. Nous
+          combattons les inquiétudes et chassons les ombres tristes provoquées
+          par les méchants. Nous croyons au potentiel de chaque personne pour
+          avoir une chance dans la société et vivre heureux. Notre association
+          est une communauté d’individus passionnés qui ont à cœur d’avoir un
+          impact positif. Nous rassemblons des personnes partageant les mêmes
+          idées afin de renforcer des connaissances, d’inspirer l’action et de
+          susciter des changements significatifs.
+        </p>
+
+        <p class="text-center">
+          En mettant l’accent sur l’humanisme, la collaboration et
+          l’autonomisation, nous visons à créer un avenir meilleur pour tous.
+          Notre porte est toujours ouverte pour partager un sourire ou essuyer
+          une larme. Vous n’êtes jamais seul. Venez nous voir, nous vous
+          soutenons.
+        </p>
+
+        <p class="text-center">
+          Au sein de notre association, nous prônons le respect, l’empathie et
+          la considération. Notre cible est universelle mais plus centrée sur
+          les mères filles, jeunes mères. Nos valeurs sont définies par notre
+          engagement à favoriser l’écoute et l’accompagnement pour ressortir le
+          potentiel enfoui de chacun. Nous voulons changer le regard sur ce qui
+          concerne la maladie mentale en Afrique, qui est souvent
+          malheureusement assujettie à la sorcellerie. Nous voulons favoriser
+          une culture d’inclusion, d’apprentissage continu à travers
+          l’information et de réflexion avant-gardiste.
+        </p>
+
+        <p class="text-center">
+          Nos membres sont animés par la conviction qu’un changement positif
+          commence par la communauté et la collaboration. Nous nous engageons à
+          nous soutenir mutuellement, considérez nous comme une couverture
+          douillette pour votre cœur.
+        </p>
+      </article>
+
+      <article class="flow">
+        <h2 class="heading-2 text-center">Nos valeurs</h2>
+        <p class="text-center">
+          <strong>Respect</strong> : Permet de vivre en harmonie avec soi et son
+          environnement, dans un sentiment qui porte à reconnaître, à accepter, à
+          apprécier et à mettre en valeur l’autre.
+        </p>
+
+        <p class="text-center">
+          <strong>Empathie</strong> : Permet de se rapprocher d’une personne et de
+          la comprendre dans son fort intérieur (émotions, sentiments), en se mettant
+          à sa place et en étant à l’écoute.
+        </p>
+
+        <p class="text-center">
+          <strong>Considération</strong> : Est un facteur très important pour l’être
+          humain. Considérer une personne sans jugement, c’est la rendre visible,
+          en lui permettant d’être et de se créer elle-même par la suite.
+        </p>
+      </article>
+    </div>
+  </section>
+
+{% endblock %}

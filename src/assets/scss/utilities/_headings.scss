@@ -9,3 +9,6 @@
 .heading-3 {
   @include heading($heading-3-font-size, $heading-3-color);
 }
+.heading-4 {
+  @include heading($heading-4-font-size, $heading-4-color);
+}

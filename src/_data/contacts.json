@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "title": "Email",
+      "icon": "icon-envelope.svg",
+      "summary": "Pour toute question, n’hésitez pas à nous contacter par email.",
+      "url": "mailto:airassociation@outlook.fr",
+      "urlText": "airassociation@outlook.fr"
+    },
+    {
+      "title": "Téléphone",
+      "icon": "icon-telephone.svg",
+      "summary": "Appelez-nous pour toute assistance ou information supplémentaire.",
+      "url": "tel:+33758587560",
+      "urlText": "+33 7 58 58 75 60"
+    },
+    {
+      "title": "Bureau",
+      "icon": "icon-placeholder-pin.svg",
+      "summary": "Nous sommes situés au coeur de la ville pour mieux vous servir.",
+      "url": "https://association-renaissance.org/",
+      "urlText": "121 Boulevard de l’Europe 76100 Rouen, France"
+    }
+  ]
+}

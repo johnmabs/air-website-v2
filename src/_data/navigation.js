@@ -8,7 +8,7 @@ export default [
   {
     label: "À Propos",
     trigger: "a-propos",
-    url: "/a-propos/",
+    url: "/about/",
     external: false,
   },
   {
@@ -37,3 +37,24 @@ export const button = {
   external: true,
   theme: "primary",
 };
+
+export const footer = [
+  {
+    label: "Accueil",
+    trigger: "accueil",
+    url: "/",
+    external: false,
+  },
+  {
+    label: "Prendre contact",
+    trigger: "contact",
+    url: "/contact/",
+    external: false,
+  },
+  {
+    label: "À Propos",
+    trigger: "a-propos",
+    url: "/a-propos/",
+    external: false,
+  },
+];

@@ -33,4 +33,12 @@ support_us:
     href: "https://www.helloasso.com/associations/association-internationale-renaissance/formulaires/1"
     text: 'Faire un don <span class="visually-hidden">à l''association AIR</span>'
     theme: "primary"
+
+resources:
+  title: "Ressources et soutien pour les victimes"
+  summary: "Engagez-vous à soutenir la santé mentale en Afrique avec nous."
+  button:
+    href: "/about-us/"
+    text: 'En savoir plus <span class="visually-hidden">sur l''association AIR </span>'
+    theme: "accent"
 ---

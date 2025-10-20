@@ -9,12 +9,12 @@
 
         <div class="flex-group margin-inline-auto margin-block-start-8">
           <a class="button" 
-            data-type={{ hero.buttons.button_1.theme }} 
+            data-type="{{ hero.buttons.button_1.theme }}" 
             href="{{ hero.buttons.button_1.href }}">
             {{ hero.buttons.button_1.text | safe }}
           </a>
           <a class="button" 
-            data-type={{ hero.buttons.button_2.theme }} 
+            data-type="{{ hero.buttons.button_2.theme }}"
             href="{{ hero.buttons.button_2.href }}">
             {{ hero.buttons.button_2.text | safe }}
           </a>
@@ -87,7 +87,7 @@
           <p>{{ engagement.content }}</p>
         </div>
         <div>
-          <img class="border-radius-3" src={{ engagement.image.src }} alt={{ engagement.image.alt }}>
+          <img class="border-radius-3" src="{{ engagement.image.src }}" alt="{{ engagement.image.alt }}">
         </div>
       </div>
     </div>
@@ -105,7 +105,7 @@
               </p>
               <div class="author">
                 <div class="img-container">
-                  <img src={{ testimonial.author.image.src }} alt={{ testimonial.author.image.alt }}/>
+                  <img src="{{ testimonial.author.image.src }}" alt="{{ testimonial.author.image.alt }}"/>
                 </div>
 
                 <div class="author-info">
@@ -140,7 +140,7 @@
         </div>
         <div class="flow">
           <p>{{ support_us.content }}</p>
-          <a class="button" href={{ support_us.button.href }}  data-type={{ support_us.button.theme }}>{{ support_us.button.text | safe }}</a>
+          <a class="button" href="{{ support_us.button.href }}"  data-type="{{ support_us.button.theme }}">{{ support_us.button.text | safe }}</a>
         </div>
       </div>
     </div>
@@ -148,9 +148,47 @@
   {# End support us section #}
 
   {# Contac us section #}
-  <section class="section bg-accent-400">
-    <div class="wrapper"></div>
+  <section class="section bg-accent-400 home-contact">
+    <div class="wrapper">
+      <div class="grid-auto-fit">
+
+        {% set icons_base_path = "svg/" %}
+
+        {% for item in contacts.items %}
+          {% set icon_path = item.icon %}
+          {% set fullpath = [icons_base_path, icon_path] | join %}
+          <div class="flow text-center clr-neutral-1000">
+            <span class="home-contact__svg">{% include fullpath %}</span>
+            <h4 class="heading-4 clr-neutral-1000">{{ item.title }}</h4>
+            <p>{{ item.summary }}</p>
+            <div>
+              <a class="clr-neutral-1000" href="{{ item.url }}">{{ item.urlText }}</a>
+            </div>
+          </div>
+        {% endfor %}
+
+      </div>
+    </div>
   </section>
   {# End contac us section #}
+
+  <section class="section bg-accent-500">
+    <div class="wrapper">
+      <div class="even-columns">
+        <div class="flow clr-neutral-1000">
+          <h2 class="heading-2 clr-neutral-1000 fw-bold">
+            {{ resources.title }}
+          </h2>
+
+          <p>{{ resources.summary }}</p>
+
+          <a class="button" href="{{resources.button.href}}" data-type="{{resources.button.theme}}">
+            {{ resources.button.text | safe }}
+          </a>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </section>
 
 {% endblock %}

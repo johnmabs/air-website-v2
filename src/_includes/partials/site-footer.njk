@@ -1,10 +1,49 @@
-<footer class="site-footer">
+<footer class="site-footer section">
   <div class="wrapper">
     <div class="site-footer__inner">
-      <p>&copy; {{ site.buildTime | dateYear }}
-        {{ site.title }}. Tous droits réservés.</p>
-      <p>Conçu et développé par <a href="johnmabiala.me" target="_blank" rel="noopener">John Mabiala</a>
-      </p>
+      <div class="site-footer__inner-top">
+        <a class="site-footer__logo" href="{{ site.baseUrl }}">
+          <img src="/assets/img/air-logo.png" alt="Logo {{ site.title }}">
+          <p class="visually-hidden">{{ site.title }}</p>
+        </a>
+        <span id="footer-nav-label" class="visually-hidden" hidden>Bare de navigation de pied de page</span>
+        <nav class="site-footer__navigation" role="nav" aria-labelledBy="footer-nav-label" >
+          <ul role="list">
+            {% for item in navigation.footer %}
+              <li>
+                <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>
+                  {{ item.label }}
+                </a>
+              </li>
+            {% endfor %}
+            <li>
+              <a href="{{navigation.button.url}}">
+                 Faire un don <span class="visually-hidden">à l'AIR</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="flex-group align-center">
+          {% set base_path = "svg/" %}
+          {% for item in socialmedia.items %}
+            {% set icon_name = item.icon %}
+            {% set full_path = [base_path, icon_name] | join %}
+
+            <li>
+              <a href="{{item.url}}" aria-label="{{ item.name }}" target="_blank">
+                {% include full_path %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <hr class="separator"/>
+      <div class="text-center">
+        <p>
+          © 2025 Association International Renaissance. Tous droits réservés.
+        </p>
+      </div>
     </div>
   </div>
 </footer>

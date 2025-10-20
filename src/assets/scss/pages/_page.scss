@@ -1,0 +1,24 @@
+.page-head {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: top 15% right 50%;
+  background-size: cover;
+
+  z-index: 1;
+
+  &__inner {
+    --flow-spacer: 2em;
+    padding-block: 6rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(
+      hsla(0, 0%, 0%, 0.205),
+      hsla(0, 0%, 0%, 0.863)
+    );
+    z-index: -1;
+  }
+}

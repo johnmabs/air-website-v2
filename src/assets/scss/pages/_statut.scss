@@ -1,0 +1,38 @@
+@use "../abstracts/" as *;
+
+.page-head-statut {
+  background-image: url(/assets/img/Pepeople-talking-2.png);
+}
+
+.page-head::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    hsla(0, 0%, 0%, 0.432),
+    hsla(0, 0%, 0%, 0.863)
+  );
+  z-index: -1;
+}
+
+.page-statut {
+  background-color: #cbc8c8;
+
+  :is(h2, h3, h4, h5) {
+    color: #a44737;
+  }
+
+  article p {
+    color: #302c2c;
+  }
+
+  ul {
+    color: #302c2c;
+    margin-inline-start: 1rem;
+  }
+
+  .sub-h {
+    margin-top: 2rem;
+    margin-block-end: 0;
+  }
+}

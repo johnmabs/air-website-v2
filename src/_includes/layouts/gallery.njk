@@ -1,0 +1,26 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <section class="page-head page-head-gallery section">
+    <div class="wrapper" data-type="narrow">
+      <div class="page-head__inner flow">
+        <h1 class="heading-1 clr-neutral-100 text-center">{{ title }}</h1>
+      </div>
+    </div>
+  </section>
+  <section class="section bg-accent-600">
+    <div class="wrapper">
+      <div class="gallery"></div>
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <span class="prev">&#10094;</span>
+        <div class="lightbox-content-container">
+          <img class="lightbox-content" id="lightbox-image" alt=""/>
+          <p id="lightbox-text" class="lightbox-text"></p>
+        </div>
+        <span class="next">&#10095;</span>
+      </div>
+    </div>
+  </section>
+{% endblock %}

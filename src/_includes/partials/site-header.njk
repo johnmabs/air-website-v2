@@ -2,9 +2,9 @@
   <div class="wrapper">
     <div class="site-header__inner">
 
-      <a class="site-header__logo" href={{ site.baseUrl }}>
+      <a class="site-header__logo" href="{{ site.baseUrl }}">
         <img src="/assets/img/air-logo.png" alt="Logo {{ site.title }}">
-        <p class="visually-hidden">{{ site.title }}}</p>
+        <p class="visually-hidden">{{ site.title }}</p>
       </a>
 
       <span id="nav-label" class="visually-hidden" hidden>Bare de navigation principale</span>
@@ -26,7 +26,7 @@
             </li>
           {% endfor %}
         </ul>
-        <a href={{ navigation.button.url }} data-type={{ navigation.button.theme }} class="button">{{ navigation.button.label }}</a>
+        <a href="{{ navigation.button.url }}" data-type="{{ navigation.button.theme }}" class="button">{{ navigation.button.label }}</a>
       </nav>
     </div>
   </div>

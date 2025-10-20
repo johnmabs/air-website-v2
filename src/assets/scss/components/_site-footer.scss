@@ -1,7 +1,6 @@
 @use "../abstracts/" as *;
 
 .site-footer {
-  padding-block: $size-11;
   background-color: $footer-background-color;
   color: $footer-text-color;
 
@@ -14,5 +13,85 @@
     &:is(:hover, :focus) {
       color: $footer-link-color-hover;
     }
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      justify-content: space-between;
+
+      @include mq(medium) {
+        flex-direction: row;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    gap: $size-4;
+
+    ul {
+      display: flex;
+      // flex-wrap: wrap;
+      flex-direction: column;
+      gap: $size-4;
+
+      font-family: $navigation-font-family;
+      font-weight: $navigation-font-weight;
+      text-align: center;
+
+      @include mq(medium) {
+        flex-direction: row;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      color: $navigation-color;
+      text-decoration: $navigation-link-text-decoration;
+      transition: color 0.3s ease-in-out;
+
+      &:is(:hover, :focus) {
+        color: $navigation-color-hover;
+      }
+    }
+  }
+
+  &__logo {
+    --small-size-logo: 65px;
+    --large-size-logo: 80px;
+
+    width: var(--small-size-logo);
+    height: var(--small-size-logo);
+    display: inline-block;
+
+    @include mq(medium) {
+      width: var(--large-size-logo);
+      height: var(--large-size-logo);
+    }
+
+    transition: all 500ms;
+  }
+
+  svg {
+    color: currentColor;
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .separator {
+    background-color: #ffffff29;
+    border: none;
+    width: 100%;
+    height: 1px;
+    margin-block: 32px;
   }
 }
